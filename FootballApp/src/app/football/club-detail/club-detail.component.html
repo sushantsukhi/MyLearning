@@ -1,0 +1,13 @@
+<div *ngIf="club">
+	<h4>Selected Club Details: {{club.id | uppercase}}</h4>
+	<div>
+		<span>ID: </span>{{club.id}}
+	</div>
+	<div>
+		<label>NAME: <input [(ngModel)]="club.name" placeholder="name" />
+		</label>
+	</div>
+	<button (click)="goBack()">Back</button>
+	<button (click)="save()">Save</button>
+</div>
+
